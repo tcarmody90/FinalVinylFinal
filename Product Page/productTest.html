@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Test Page</title>
+
+    <!-- [Bootstrap] Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- [Bootstrap] needs to be before other styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleProductTest.css" />
+</head>
+<body>
+    <h1 style="text-align: center">Products</h1>
+    <div class="container-fluid w-100" style="border: 0px solid blue;">
+        <div class="row justify-content-end" style="min-height: 400px; border: 0px solid red;">
+
+            <!-- 
+                ID for each album container will be the skew, fill in with php 
+                Use id to determine which album have, get tracks from json or api possibly
+                    https://developer.spotify.com/web-api/get-albums-tracks/
+                Seems like database is better
+                    https://stackoverflow.com/questions/6749317/storing-album-track-list-in-a-database
+            -->
+            <div class="col-3 align-self-start m-3" style="border: 0px solid pink;">
+                <div class="c_album_container" id="tempSkew1">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/pinkCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+            <div class="col-3 align-self-center m-3" style="border: 0px solid pink;">
+                <div class="c_album_container" id="tempSkew2">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/leavesCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+            <div class="col-3 align-self-end m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end" style="min-height: 400px; border: 0px solid red;">
+            <div class="col-3 align-self-start m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+            <div class="col-3 align-self-center m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+            <div class="col-3 align-self-end m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end" style="min-height: 400px; border: 0px solid red;">
+            <div class="col-3 align-self-start m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+            <div class="col-3 align-self-center m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+            <div class="col-3 align-self-end m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end" style="min-height: 400px; border: 0px solid red;">
+            <div class="col-3 align-self-start m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+            <div class="col-3 align-self-center m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+            <div class="col-3 align-self-end m-3" style="border: 0px solid pink;">
+                <div class="c_album_container">
+                    <figure class="w-75 mx-auto c_album p-4">
+                        <img class="img-fluid" src="images/albums/bryterCover.jpg" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center" id="id_pDescription" style="border: 0px solid purple; color: black;">
+        <div class="row justify-content-end pr-4" id="id_close" style="height: 10%; font-size: 5vh; color: black; border: 0px solid yellow;">&times;</div>
+        <div class="row p-2" style="height: 90%; border: 0px solid purple;">
+            <div class="col-4 align-self-center" style="border: 0px solid purple;">
+                <p>Product Info</p>
+                <p>Add to Cart</p>
+            </div>
+            <div class="col-4 align-self-center" style="border: 0px solid purple;">
+                <p>Track List???</p>
+            </div>
+            <div class="col-4 align-self-center h-100" style="border: 0px solid purple;">
+                <p class="height: 10%;">Album Image</p>
+                <figure class="mx-auto" style="height: 90%;">
+                    <img style="max-height: 100%; max-width: 100%;" src="images/albums/bryterCover.jpg" />
+                </figure>
+            </div>
+        </div>
+    </div>
+<!-- [Bootstrap] javascript plugins, jquery and popper.js for bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    //When page open, set product description box to not display
+    $("#id_pDescription").css({width: 0, height: 0, position: "fixed", display: "none"});
+
+    //Resize product description box on window resize
+    $(window).resize(function(){
+        if($("#id_pDescription").css("display") == "block")
+        {
+            //Resize box
+            var w_width = $(window).innerWidth();
+            var w_height = $(window).innerHeight();
+            $("#id_pDescription").css({width: w_width, height: w_height * .75});
+
+            //Recalculating left and top of position going back to when close box
+            if($("#id_pDescription").data("albumClicked"))
+            {
+                var albumContainer = $("#id_pDescription").data("albumClicked");
+                $("#id_pDescription").data("albumLeft", albumContainer.offset().left);
+                $("#id_pDescription").data("albumTop", albumContainer.offset().top);
+                // console.log("Position[Resize]: (" + albumContainer.offset().left + ", " + (albumContainer.offset().top) + ")");
+            }
+        }
+    });
+
+    //When click album, open product description box
+    //Need to move product to product description box when click
+    $(".c_album").click(function(){
+        //If previous albumClicked exists, show it when click another album
+        if($("#id_pDescription").data("albumClicked"))
+        {
+            $("#id_pDescription").data("albumClicked").css({opacity: "1"});
+        }
+
+        //Getting width and height of window
+        var w_width = $(window).innerWidth();
+        var w_height = $(window).innerHeight();
+        var albumContainer = $(this).parent(".c_album_container");
+        
+        //Position for product description box starts where album container's position is at
+        var albumLeft = albumContainer.offset().left;
+        var albumTop = albumContainer.offset().top - $(document).scrollTop();
+        var albumCWidth = albumContainer.outerWidth();
+        var albumCHeight = albumContainer.outerHeight();
+        // console.log("Position[Album Click]: (" + albumLeft + ", " + albumTop + ")");
+        // console.log("Dimensions: (" + albumCWidth + "x" + albumCHeight + ")");
+
+        //Saving album clicked so can animate back to its position when product description box is closed
+        $("#id_pDescription").data("albumClicked", albumContainer);
+        $("#id_pDescription").data("albumLeft", albumLeft);
+        $("#id_pDescription").data("albumTop", albumTop + $(document).scrollTop());
+
+        //Set product description box position and size to album clicked and hide album clicked
+        $("#id_pDescription").css({left: albumLeft, top: albumTop, width: albumCWidth, height: albumCHeight});
+        albumContainer.css({opacity: "0"});
+
+        //Get image of album and put in description box before display box
+        $("#id_pDescription").find("img").attr("src", $(this).find("img").attr("src"));
+        $("#id_pDescription").css({display: "block"});
+        //Animate to window size and fade in contents
+        $("#id_pDescription").animate({left: "0px", top: "25%", bottom: "0px", width: w_width, height: w_height * .75}, function(){
+            $(this).find(".row").fadeIn("slow");
+        });
+    });
+
+    //When click X, close production description box
+    $("#id_close").click(function(){
+        //Get position and size of album animating back to
+        var albumLeft = $("#id_pDescription").data("albumLeft");
+        var albumTop = $("#id_pDescription").data("albumTop") - $(document).scrollTop();
+        // console.log("Position[X Click]: (" + albumLeft + ", " + albumTop + ")");
+
+        var albumCWidth = $("#id_pDescription").data("albumClicked").outerWidth();
+        var albumCHeight = $("#id_pDescription").data("albumClicked").outerHeight();
+
+        //Hide contents before move box
+        $("#id_pDescription").find(".row").hide();
+
+        //Moving box back to album position, hide box, and make album appear
+        $("#id_pDescription").animate({width: albumCWidth, height: albumCHeight, position: "fixed", left: albumLeft, top: albumTop}, function(){
+            $(this).css({display: "none"});
+            $(this).data("albumClicked").css({opacity: "1"});
+        });
+    });
+});
+</script>
+
+</body>
+</html>

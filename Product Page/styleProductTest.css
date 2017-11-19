@@ -1,0 +1,16 @@
+/* Album */
+.c_album_container{
+   background-color: #dcdcdc; 
+}
+.c_album:hover{
+    cursor: pointer;
+}
+
+/* Product Description Box */
+#id_pDescription{
+    /* background-color: rgba(94, 94, 94, .8); */
+    background-color: #dcdcdc; 
+}
+#id_close:hover{
+    cursor: pointer;
+}
